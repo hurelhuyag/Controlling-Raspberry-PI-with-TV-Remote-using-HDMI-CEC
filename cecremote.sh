@@ -115,7 +115,8 @@ do
 		    xdotool key Return
                     ;;
                 "return")
-                    xdotool key "Alt_L+Left" #WWW-Back
+                    #xdotool key "Alt_L+Left" #WWW-Back
+		    xdotool key Escape
                     ;;
                 "exit")
                     echo Key Pressed: EXIT
