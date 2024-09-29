@@ -87,27 +87,32 @@ do
                     xdotool click 3 #right mouse button click"
                     ;;
                 "up")
-                    intpixels=$((-1 * intmousespeed))
-                    xdotool mousemove_relative -- 0 $intpixels #move mouse up
-                    intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+                    #intpixels=$((-1 * intmousespeed))
+                    #xdotool mousemove_relative -- 0 $intpixels #move mouse up
+                    #intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+		    xdotool key Up
                     ;;
                 "down")
-                    intpixels=$(( 1 * intmousespeed))
-                    xdotool mousemove_relative -- 0 $intpixels #move mouse down
-                    intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+                    #intpixels=$(( 1 * intmousespeed))
+                    #xdotool mousemove_relative -- 0 $intpixels #move mouse down
+                    #intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+		    xdotool key Down
                     ;;
                 "left")
-                    intpixels=$((-1 * intmousespeed))
-                    xdotool mousemove_relative -- $intpixels 0 #move mouse left
-                    intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+                    #intpixels=$((-1 * intmousespeed))
+                    #xdotool mousemove_relative -- $intpixels 0 #move mouse left
+                    #intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+		    xdotool key Left
                     ;;
                 "right")
-                    intpixels=$(( 1 * intmousespeed))
-                    xdotool mousemove_relative -- $intpixels 0 #move mouse right
-                    intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+                    #intpixels=$(( 1 * intmousespeed))
+                    #xdotool mousemove_relative -- $intpixels 0 #move mouse right
+                    #intmousespeed=$((intmousespeed + intmouseacc)) #speed up
+		    xdotool key Right
                     ;;
                 "select")
-                    xdotool click 1 #left mouse button click
+                    #xdotool click 1 #left mouse button click
+		    xdotool key Return
                     ;;
                 "return")
                     xdotool key "Alt_L+Left" #WWW-Back
